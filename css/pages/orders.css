@@ -1,0 +1,13 @@
+/* ---------- Orders Page ---------- */
+.orders-toolbar-right { display: flex; gap: var(--space-1); align-items: center; }
+.notes-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  padding: 6px;
+  border-radius: 6px;
+}
+.notes-input:hover { background: var(--color-bg); }
+.notes-input:focus { background: var(--color-surface); box-shadow: 0 0 0 2px var(--color-primary-soft); outline: none; }

@@ -5,8 +5,8 @@
 // Get them from: Supabase Dashboard → Project Settings → API
 // ============================================================
 
-const SUPABASE_URL = "https://YOUR_PROJECT_ID.supabase.co";
-const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_PUBLIC_KEY";
+const SUPABASE_URL = "https://vmmaiqtlhjybrmyjwaoe.supabase.co";
+const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InZtbWFpcXRsaGp5YnJteWp3YW9lIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODQwNjA4NTMsImV4cCI6MjA5OTYzNjg1M30.LATF9ph4WMPuKhWc6FnvrjkrFMxe8xTo6ryC1JVf67g";
 
 // Supabase JS client is loaded globally via CDN script tag in each HTML page
 // (see <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>)

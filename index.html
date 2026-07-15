@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bang Order</title>
+  <meta http-equiv="refresh" content="0; url=/pages/login.html" />
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="/js/config/supabase.config.js"></script>
+  <script src="/js/services/auth.service.js"></script>
+  <script>
+    (async function () {
+      const session = await AuthService.getSession();
+      window.location.href = session ? '/pages/dashboard.html' : '/pages/login.html';
+    })();
+  </script>
+</body>
+</html>

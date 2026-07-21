@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Import · Bang Order</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/base.css" />
+  <link rel="stylesheet" href="../css/layout.css" />
+  <link rel="stylesheet" href="../css/components.css" />
+  <link rel="stylesheet" href="../css/pages/import.css" />
+</head>
+<body>
+  <!-- Sidebar + topbar + #page-content are injected by Shell.render() -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://cdn.sheetjs.com/xlsx-latest/package/dist/xlsx.full.min.js"></script>
+
+  <script src="../js/i18n/translations.js"></script>
+  <script src="../js/i18n/i18n.js"></script>
+  <script>document.documentElement.lang = I18n.getLocale();</script>
+
+  <script src="../js/config/supabase.config.js"></script>
+
+  <script src="../js/utils/formatters.js"></script>
+  <script src="../js/utils/validators.js"></script>
+  <script src="../js/utils/dedupe.js"></script>
+  <script src="../js/utils/excelParser.js"></script>
+
+  <script src="../js/services/auth.service.js"></script>
+  <script src="../js/services/appSettings.service.js"></script>
+  <script src="../js/services/store.service.js"></script>
+  <script src="../js/services/order.service.js"></script>
+  <script src="../js/services/importBatch.service.js"></script>
+  <script src="../js/services/inventory.service.js"></script>
+  <script src="../js/services/import.service.js"></script>
+
+  <script src="../js/components/Toast.js"></script>
+  <script src="../js/components/ProgressStepper.js"></script>
+  <script src="../js/components/Shell.js"></script>
+
+  <script src="../js/pages/import.page.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+/* ---------- Orders Page ---------- */
+.orders-toolbar-right { display: flex; gap: var(--space-1); align-items: center; }
+
+/* Checkbox selection column */
+.row-checkbox, #select-all-checkbox {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+  vertical-align: middle;
+}
+.data-table td.checkbox-cell, .data-table th.checkbox-cell {
+  width: 40px;
+  text-align: center;
+  padding: 0;
+}
+
+/* Bulk action toolbar — appears above the table when rows are selected */
+.bulk-toolbar {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  background: var(--color-primary-soft);
+  border: 1px solid var(--color-primary);
+  border-radius: var(--radius-sm);
+  padding: 10px var(--space-2);
+  margin-bottom: var(--space-2);
+  animation: fade-in var(--duration-base) var(--ease);
+}
+.bulk-toolbar.visible { display: flex; }
+.bulk-toolbar__count { font-size: 13.5px; font-weight: 600; color: var(--text-primary); }
+.bulk-toolbar__actions { display: flex; align-items: center; gap: 8px; }
+
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.notes-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  padding: 6px;
+  border-radius: 6px;
+}
+.notes-input:hover { background: var(--color-bg); }
+.notes-input:focus { background: var(--color-surface); box-shadow: 0 0 0 2px var(--color-primary-soft); outline: none; }

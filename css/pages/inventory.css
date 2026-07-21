@@ -1,0 +1,6 @@
+/* ---------- Inventory Page ---------- */
+/* Most UI here reuses existing primitives (table-toolbar, data-table,
+   badge, import-note, drawer) — this file only holds page-specific
+   tweaks. */
+
+#low-stock-banner:empty { display: none; }

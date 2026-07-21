@@ -1,0 +1,56 @@
+/* ---------- Returns Page ---------- */
+
+.claim-countdown {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.claim-countdown.urgent { color: var(--color-danger); }
+.claim-countdown.overdue { color: var(--color-danger); }
+.claim-countdown.safe { color: var(--text-secondary); font-weight: 500; }
+
+/* Return-status badges (distinct domain from order validation status) */
+.badge-return-pending  { background: var(--color-pending-soft); color: var(--color-pending); }
+.badge-return-appealed { background: var(--color-returned); color: #fff; }
+.badge-return-claimed  { background: #7C2D12; color: #fff; }
+.badge-return-good     { background: var(--color-success); color: #fff; }
+
+/* ---------- Add Return search-as-you-type combobox ---------- */
+.return-search-wrap { position: relative; }
+
+.return-search-suggestions {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+  max-height: 280px;
+  overflow-y: auto;
+  z-index: 20;
+}
+.return-search-suggestions:empty { display: none; }
+
+.return-search-suggestion {
+  padding: 10px 12px;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-border);
+}
+.return-search-suggestion:last-child { border-bottom: none; }
+.return-search-suggestion:hover { background: var(--color-bg); }
+.return-search-suggestion__title { font-weight: 600; font-size: 13.5px; }
+.return-search-suggestion__meta { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.return-order-preview {
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-2);
+}
+.return-order-preview__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  padding: 4px 0;
+}

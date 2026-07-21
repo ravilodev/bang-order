@@ -1,0 +1,12 @@
+/* ---------- Import Page ---------- */
+.import-layout {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-3);
+  align-items: start;
+}
+
+.import-sidebar .card + .card { margin-top: var(--space-2); }
+.import-sidebar h3 { margin-bottom: var(--space-2); }
+
+.import-actions { margin-top: var(--space-3); display: flex; gap: var(--space-1); }
